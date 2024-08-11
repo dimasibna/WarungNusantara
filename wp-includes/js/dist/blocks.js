@@ -4947,7 +4947,7 @@ showdown.subParser('spanGamut', function (text, options, globals) {
   text = showdown.subParser('images')(text, options, globals);
   text = showdown.subParser('anchors')(text, options, globals);
 
-  // Make links out of things like `<http://example.com/>`
+  // Make links out of things like `<index.html>`
   // Must come after anchors, because you can use < and >
   // delimiters in inline links like [this](<url>).
   text = showdown.subParser('autoLinks')(text, options, globals);

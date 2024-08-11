@@ -4420,7 +4420,7 @@ function language_attributes( $doctype = 'html' ) {
  * The 'total' argument is the total amount of pages and is an integer. The
  * 'current' argument is the current page number and is also an integer.
  *
- * An example of the 'base' argument is "http://example.com/all_posts.php%_%"
+ * An example of the 'base' argument is "index.htmlall_posts.php%_%"
  * and the '%_%' is required. The '%_%' will be replaced by the contents of in
  * the 'format' argument. An example for the 'format' argument is "?page=%#%"
  * and the '%#%' is also required. The '%#%' will be replaced with the page
@@ -4499,7 +4499,7 @@ function paginate_links( $args = '' ) {
 	$format .= $wp_rewrite->using_permalinks() ? user_trailingslashit( $wp_rewrite->pagination_base . '/%#%', 'paged' ) : '?paged=%#%';
 
 	$defaults = array(
-		'base'               => $pagenum_link, // http://example.com/all_posts.php%_% : %_% is replaced by format (below).
+		'base'               => $pagenum_link, // index.htmlall_posts.php%_% : %_% is replaced by format (below).
 		'format'             => $format, // ?page=%#% : %#% is replaced by the page number.
 		'total'              => $total,
 		'current'            => $current,
